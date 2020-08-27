@@ -1,4 +1,4 @@
-package com.ssafy.bigdata.model;
+package com.minseong.blog.model;
 
 public class RestResponse {
     public boolean status;

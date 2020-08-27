@@ -1,4 +1,4 @@
-package com.ssafy.bigdata;
+package com.minseong.blog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

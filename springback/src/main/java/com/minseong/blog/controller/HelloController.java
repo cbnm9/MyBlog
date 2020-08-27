@@ -1,9 +1,9 @@
-package com.ssafy.bigdata.controller;
+package com.minseong.blog.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ssafy.bigdata.model.RestResponse;
+import com.minseong.blog.model.RestResponse;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
