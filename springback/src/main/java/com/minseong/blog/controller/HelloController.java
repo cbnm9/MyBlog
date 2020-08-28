@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiOperation;
 
 @CrossOrigin(origins = { "*" })
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/spring")
 public class HelloController {
     
     @ApiOperation(value = "테스트에여")
