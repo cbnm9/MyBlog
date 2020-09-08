@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#########################################
+##  Step 1 : Set variables for script  ##
+#########################################
+
 # Set docker image and container title
 TITLE=blog
 
@@ -11,6 +15,9 @@ FRONT_IMG=${TITLE}/front
 SPRING_DOCKER=${TITLE}-spring
 FRONT_DOCKER=${TITLE}-front
 
+####################################################
+##  Step 2 : Remove docker images and containers  ##
+####################################################
 pwd
 
 # Remove current image
@@ -21,6 +28,9 @@ docker rmi -f $FRONT_IMG || true
 docker rm -f $SPRING_DOCKER || true
 docker rm -f $FRONT_DOCKER || true
 
+################################################
+##  Step 3 : Build and Deploy spring project  ##
+################################################
 # Move to spring folder for build and deploy spring backend
 cd springback
 pwd
@@ -35,6 +45,9 @@ docker build -t $SPRING_IMG .
 # sudo docker run --name $BACK_DOCKER --network="host" -v tvility:/tvility -d $BACK_IMG
 docker run --name $SPRING_DOCKER --network="host" -d $SPRING_IMG
 
+##################################################
+##  Step 4 : Build and Deploy frontend project  ##
+##################################################
 # Move to frontend folder for build and deploy frontend
 cd ../frontend
 pwd

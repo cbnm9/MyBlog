@@ -8,11 +8,11 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ssafy.bigdata</groupId>
-	<artifactId>bigdata</artifactId>
+	<groupId>com.minseong.blog</groupId>
+	<artifactId>minseong-blog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bigdata</name>
-	<description>Demo project for Spring Boot</description>
+	<name>minseong-blog</name>
+	<description>Blog project for Spring Boot</description>
 
 	<properties>
 		<java.version>14</java.version>
