@@ -1,3 +1,4 @@
+# aws 서버에서 이거 도커 빌드하는데 왜 오류가 ㅠㅠ
 FROM node:lts-alpine
 
 # install simple http server for serving static content
